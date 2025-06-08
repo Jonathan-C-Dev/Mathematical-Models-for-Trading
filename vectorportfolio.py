@@ -4,7 +4,7 @@ import yfinance as yf
 import matplotlib.pyplot as plt
 
 # === Download Historical Data ===
-tickers = ['AAPL', 'NVDA']
+tickers = ['AAPL', 'MSFT']
 start_date = "2023-06-01"
 end_date = "2024-06-01"
 
