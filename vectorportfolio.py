@@ -35,7 +35,7 @@ grad_change = np.diff(gradients, axis=0)
 
 # === Generate Signals ===
 signals = []
-threshold = 1.0  # start higher for real data
+threshold = 1.0
 
 for g in grad_change:
     if np.sum(g) > threshold:
@@ -45,7 +45,7 @@ for g in grad_change:
     else:
         signals.append(0)
 
-signals.append(signals[-1])  # to match shape
+signals.append(signals[-1])
 
 signals = np.array(signals)
 
